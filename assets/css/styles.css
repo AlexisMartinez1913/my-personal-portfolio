@@ -15,6 +15,12 @@ html {
     
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Seccion 1*/
 .section-1 {
     width: 100%;
@@ -24,10 +30,8 @@ html {
             rgba(255, 255, 255, 0.3)),
     url("../images/fondo-header.jpg");
     background-size: cover;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 /*Cierra seccion 1*/
@@ -81,3 +85,48 @@ html {
     letter-spacing: 0.4rem;
 
 }
+
+/*-- Fin sección 1  -- */
+
+/*Menu Navegacion */
+.navbar {
+    width: 100%;
+    height: 4rem;
+    background-color: #7e43ff;
+    box-shadow: 0.2rem 0.2rem 0.5rem #212121;
+
+}
+
+.navbar-link {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #212121;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.2s;
+    
+    
+}
+
+.navbar-link:hover {
+    color: whitesmoke;
+}
+
+.navbar-link::before {
+    content: "";
+    /* Valor inicial de prueba */
+    /*  width: 130%; */
+    height: 0.2rem;
+    background-color: white;
+    position: absolute;
+    right: -15%;
+    bottom: -0.3rem;
+    transition: width 0.2s;
+}
+
+.navbar-link:hover::before {
+    width: 130%;
+
+}
+/*-- Cierra Navegacion -- */
