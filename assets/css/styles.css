@@ -45,7 +45,7 @@ html {
     margin-bottom: 5rem;
     text-transform: uppercase;
     letter-spacing: 1rem;
-    border-bottom: 3rem;
+    border-bottom: 5rem;
     text-shadow: 0.2rem 0.2rem 1rem #555;
     transform: skew(-12deg); /*Efecto texto principal*/
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.6);
@@ -83,6 +83,7 @@ html {
     padding: 0.5rem 1rem;
     text-transform: uppercase;
     letter-spacing: 0.4rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -94,6 +95,7 @@ html {
     height: 4rem;
     background-color: #7e43ff;
     box-shadow: 0.2rem 0.2rem 0.5rem #212121;
+    gap: 3rem;
 
 }
 
@@ -105,8 +107,6 @@ html {
     text-transform: uppercase;
     position: relative;
     transition: color 0.2s;
-    
-    
 }
 
 .navbar-link:hover {
