@@ -187,4 +187,38 @@ html {
     /*Transiciones de llenado*/
 }
 
+.services {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.service {
+    text-align: center;
+}
+
+.service i {
+    font-size: 12rem;
+    color: #888;
+    margin-bottom: 2rem;
+    text-shadow: 1.2rem 1.2rem 0.6rem #212121;
+}
+
+.service h2 {
+    font-size: 2rem;
+    color: whitesmoke;
+    background-color: #777;
+    width: 24rem;
+    letter-spacing: 0.3rem;
+    transform: skew(-12deg);
+    box-shadow: 0.2rem 0.2rem 0.5rem #212121;
+}
+
+.service:first-child,
+.service:last-child {
+    align-self: flex-start;
+}
+
 /*Cierra Sección 2*/
