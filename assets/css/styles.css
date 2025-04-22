@@ -322,3 +322,58 @@ html {
     transition: bottom 0.4s 0.4s;
 }
 /*Cierra Sección 3 */
+
+/*Sección 4*/
+.section-4 {
+    width: 100%;
+    height: 70vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section-4-header {
+    font-size: 5rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 5rem;
+    border-color: #fff;
+    border-bottom: 0.3rem solid #fcfcfc;
+    text-shadow: 0.2rem 0.2rem 0.5rem #555;
+}
+
+.form-contact {
+    width: 50rem;
+    flex-direction: column;
+}
+
+.form-contact input,
+.form-contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background-color: #eef;
+    font-size: 1.5rem;
+    border: 0.1rem solid #7e43ff;
+}
+
+.form-contact textarea {
+    height: 10rem;
+    max-height: 15rem;
+    max-width: 100%;
+}
+
+.form-contact .form-contact-btn {
+    background-color: #7e43ff;
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+/*Cierra Sección 4*/
