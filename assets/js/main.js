@@ -59,7 +59,35 @@ const mainFunction = () => {
 // Llama a la función principal para ejecutarla inicialmente.
 mainFunction();
 
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Previene redirección
+    const form = event.target;
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+        'Accept': 'application/json'
+    }
+    })
+    .then(response => {
+        if (response.ok) {
+        document.getElementById("confirmationMessage").style.display = "block";
+        document.getElementById("errorMessage").style.display = "none";
+        form.reset(); // Limpia los campos
+    } else {
+        throw new Error("Fallo en el envío");
+    }
+    })
+    .catch(() => {
+        document.getElementById("confirmationMessage").style.display = "none";
+        document.getElementById("errorMessage").style.display = "block";
+    });
+});
+
 // Agrega un event listener al evento de cambio de tamaño de la ventana (resize) que recarga la página.
 window.addEventListener("resize", () => {
     window.location.reload();
 });
+

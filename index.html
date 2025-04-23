@@ -241,12 +241,26 @@
         <!--Sección 4 -->
         <section class="section-4" id="contacto">
             <h1 class="section-4-header">Contáctame</h1>
-            <form class="form-contact center">
-                <input type="text" placeholder="Nombre" />
-                <input type="email" placeholder="Email"/>
-                <textarea name="" id="" placeholder="Mensaje"></textarea>
+            <form class="form-contact center" action="https://formsubmit.co/a69f6eb8552e1405f248d5af1fa0ef43" method="POST">
+                <input type="text" placeholder="Nombre" required/>
+                <input type="email" placeholder="Email" required/>
+                <textarea name="" id="" placeholder="Tú Mensaje" required></textarea>
+                <!-- Opcional: evita spam -->
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Opcional: redirigir tras enviar -->
+                
                 <input type="submit" value="Contactar" class="form-contact-btn">
             </form>
+
+            <!-- Mensaje de confirmación -->
+            <div id="confirmationMessage" style="display:none; color: green; margin-top: 10px;">
+                ¡Gracias por contactarnos! Tu mensaje ha sido enviado.
+            </div>
+            <!-- Mensaje de error -->
+            <div id="errorMessage" style="display:none; color: red; margin-top: 10px;">
+                Hubo un problema al enviar el formulario. Por favor, inténtalo de nuevo.
+            </div>
 
         </section>
         <!--Cierra Seciión 4-->
