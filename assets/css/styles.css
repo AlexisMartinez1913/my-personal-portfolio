@@ -12,13 +12,20 @@
 
 html {
     font-size: 62.5%;
-    
+    scroll-behavior: smooth;
 }
 
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*Clase sticky se agrega desde js*/
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 /*Seccion 1*/
@@ -109,6 +116,11 @@ html {
     transition: color 0.2s;
 }
 
+/*Para la parte de activación del menu al hacer scroll con js */
+.change.navbar-link {
+    color: whitesmoke;
+}
+
 .navbar-link:hover {
     color: whitesmoke;
 }
@@ -127,7 +139,11 @@ html {
 
 .navbar-link:hover::before {
     width: 130%;
+}
 
+/*Para la parte de activación del menu al hacer scroll con js */
+.change.navbar-link::before  {
+    width: 130%;
 }
 /*-- Cierra Navegacion -- */
 
@@ -180,11 +196,13 @@ html {
 }
 
 .percentage-progress {
-    width: 80%;
+    /*width: 80%;*/
+    width: 0;
     height: 100%;
     background-color: #7e43ff;
     border-radius: 0.3rem;
     /*Transiciones de llenado*/
+    transition: width 0.5s 0.5s ease;
 }
 
 .services {
