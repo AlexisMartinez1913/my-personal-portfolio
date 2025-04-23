@@ -249,6 +249,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 10rem;
 }
 
 .section-3-header {
@@ -257,7 +258,7 @@ html {
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     margin-bottom: 15rem;
-    border-bottom: 0.3rem solid;
+    border-bottom: 0.3rem solid #212121;
     text-shadow: 0.2rem 0.2rem 0.5rem #212121;
 }
 
